@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dishes</string>
+
+    //------------Menu--------------
+    <string name="menu_item_1">Catalog</string>
+    <string name="menu_item_2">Contacts</string>
+
+    //------------SubMenu--------------
+    <string name="sub_menu_name">Info</string>
+    <string name="sub_menu_item_1">About</string>
+
+
+</resources>
