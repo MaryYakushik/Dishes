@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.GridView;
 import android.widget.TableLayout;
 
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(LAYOUT);
         contentLayout = (TableLayout) findViewById(R.id.content_layout);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         initNavigationView();
     }
 
@@ -47,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         contentLayout.removeAllViews();
         switch(menuItem.getItemId()){
             case R.id.navigation_item_1:
+                contentView = inflater.inflate(R.layout.catalog_activity, null);
+                GridView gridView = (GridView) contentView;
+                gridView.setAdapter(new ImageTextAdapter(this));
+                contentLayout.addView(gridView);
                 break;
             case R.id.navigation_item_2:
                 contentView = inflater.inflate(R.layout.contacts_activity, null);

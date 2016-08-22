@@ -6,7 +6,7 @@
 
     <ImageView
         android:id="@+id/catalog_image"
-        android:layout_width="fill_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content" />
 
     <TextView
